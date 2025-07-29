@@ -2,34 +2,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Improve | Web3 para Saúde</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body { margin:0; font-family:'Inter', sans-serif; background:#F6FFF8; color:#3C3C3C; }
+    body { margin:0; font-family:'Inter', sans-serif; background:#F9FFFB; color:#333; }
     header { text-align:center; padding:80px 20px; background:#E3F6E2; }
-    header img { width:180px; }
-    h1 { color:#215863; font-size:2.5em; }
-    h2 { color:#215863; font-size:1.8em; margin-top:40px; }
+    header img { width:180px; margin-bottom:20px; }
+    h1 { color:#215863; font-size:2.7em; margin-bottom:10px; }
+    h2 { color:#215863; font-size:1.9em; margin-top:40px; text-align:center; }
+    p, li { font-size:1.05em; line-height:1.6; }
     .section { padding:40px 20px; max-width:960px; margin:auto; }
-    .cta { background:#215863; color:white; padding:15px 30px; border:none; border-radius:8px; font-weight:bold; cursor:pointer; text-decoration:none; }
-    .grid-imgs img { width:100%; max-width:300px; border-radius:10px; margin:10px; }
+    .cta { background:#215863; color:white; padding:15px 30px; border:none; border-radius:10px; font-weight:bold; cursor:pointer; text-decoration:none; display:inline-block; margin-top:20px; }
+    .grid-imgs { display:flex; flex-wrap:wrap; justify-content:center; }
+    .grid-imgs img { width:100%; max-width:280px; border-radius:14px; margin:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
     footer { background:#215863; color:white; text-align:center; padding:30px; }
+    form { display:flex; flex-direction:column; gap:12px; max-width:400px; margin:auto; padding:30px; background:#ffffff; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.06); }
+    input, textarea { padding:12px; border:1px solid #ccc; border-radius:6px; font-size:1em; }
+    button { background:#215863; color:white; padding:12px; border:none; border-radius:6px; cursor:pointer; font-weight:bold; }
+    ul { list-style: none; padding: 0; }
+    ul li::before { content: "✔️ "; color: #215863; }
+    ol { padding-left:20px; }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="https://via.placeholder.com/180x60.png?text=Improve+Logo" alt="Logo Improve">
+  <img src="https://i.imgur.com/LUzA4FG.png" alt="Improve Logo" />
   <h1>Your life for life</h1>
-  <p>Web3 e fórmulas próprias para uma nova saúde descentralizada.</p>
+  <p>Fórmulas próprias, ciência natural e um token que redefine o futuro da saúde.</p>
   <a href="#token" class="cta">Conheça o Token IMP</a>
 </header>
 
 <section class="section" id="sobre">
   <h2>Sobre a Improve</h2>
-  <p>A Improve é uma startup de saúde integrativa com produção própria de fórmulas, liderada pelo Dr. Pedro H. M. Semeghini. Agora, abrimos nossa estrutura para o mundo cripto com o Token IMP.</p>
+  <p>A Improve é uma startup de saúde integrativa com produção própria de fórmulas, liderada pelo Dr. Pedro H. M. Semeghini. Nosso propósito é democratizar o acesso à saúde baseada em ciência e natureza, agora potencializada pela Web3.</p>
+</section>
+
+<section class="section" id="impacto">
+  <h2>Por que investir na Improve?</h2>
+  <ul>
+    <li>Fórmulas autorais, com base científica e eficácia real</li>
+    <li>Produção própria com validação ANVISA e internacional</li>
+    <li>Ecossistema descentralizado com staking, benefícios e acesso</li>
+    <li>Token IMP com utilidade real e comunidade ativa</li>
+  </ul>
 </section>
 
 <section class="section" id="token">
@@ -44,11 +62,11 @@
 
 <section class="section" id="visual">
   <h2>Nosso Universo</h2>
-  <div class="grid-imgs" style="display:flex; flex-wrap:wrap; justify-content:center;">
-    <img src="https://via.placeholder.com/300x300.png?text=Produto+1" alt="Brain Supplement Brown">
-    <img src="https://via.placeholder.com/300x300.png?text=Produto+2" alt="Brain Supplement Blue">
-    <img src="https://via.placeholder.com/300x300.png?text=Mulher+Sorrindo" alt="Mulher Sorrindo">
-    <img src="https://via.placeholder.com/300x300.png?text=Nadador" alt="Nadador">
+  <div class="grid-imgs">
+    <img src="https://via.placeholder.com/300x300.png?text=Improve+Focus" alt="Produto Improve" />
+    <img src="https://via.placeholder.com/300x300.png?text=Vitalidade" alt="Vitalidade" />
+    <img src="https://via.placeholder.com/300x300.png?text=Saúde+Natural" alt="Saúde Natural" />
+    <img src="https://via.placeholder.com/300x300.png?text=Bem-estar" alt="Bem-estar" />
   </div>
 </section>
 
@@ -60,6 +78,17 @@
     <li>Q1 2026 – Plataforma Improve App + staking</li>
     <li>Q2 2026 – DAO Improve e expansão global</li>
   </ol>
+</section>
+
+<section class="section" id="whitelist">
+  <h2>Participe da Whitelist</h2>
+  <form action="https://formsubmit.co/contato@improve.health" method="POST">
+    <input type="text" name="name" placeholder="Nome completo" required>
+    <input type="email" name="email" placeholder="Seu e-mail" required>
+    <input type="text" name="wallet" placeholder="Wallet (ex: 0x...)" required>
+    <textarea name="message" placeholder="Mensagem ou interesse opcional"></textarea>
+    <button type="submit">Quero Participar</button>
+  </form>
 </section>
 
 <footer>
